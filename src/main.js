@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import myConst from './constants';
 import App from './App.vue';
 import store from './store';
 import axios from './api';
@@ -8,6 +9,7 @@ import myUtils from './utils';
 Vue.config.productionTip = false;
 
 Vue.prototype.axios = axios;
+Vue.prototype.myConst = myConst;
 Vue.use(myUtils); // use $myUtils in vue
 
 new Vue({
